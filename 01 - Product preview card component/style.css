@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Typology */
+
+.product-name,
+.product-description,
+.add-to-chart {
+	font-family: 'Montserrat', sans-serif;
+}
+.product-name,
+.product-description,
+.old-price {
+	color: hsl(228, 12%, 48%);
+}
+
+.product-name {
+	letter-spacing: 0.3em;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.product-description {
+	font-size: 0.888rem;
+	line-height: 1.5em;
+}
+.add-to-chart {
+	font-size: 1.2rem;
+	color: hsl(0, 0%, 100%);
+}
+
+.product-title,
+.price-field {
+	font-family: 'Fraunces', sans-serif;
+}
+
+.product-title {
+	font-size: 2rem;
+}
+
+.current-price {
+	font-size: 2rem;
+	font-weight: 700;
+	color: hsl(158, 36%, 37%);
+}
+.old-price {
+	font-size: 1.1rem;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+/* Layout */
+body {
+	padding: 2vh 0;
+	background-color: hsl(30, 38%, 92%);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.card {
+	width: 90%;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.product-img {
+	max-height: 30vh;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.text-content {
+	padding: 2em;
+}
+
+/* Elements */
+
+.product-title {
+	margin: 0.3em 0;
+}
+
+.product-description {
+	margin: 0.3em;
+}
+
+.price-field {
+	display: flex;
+	align-items: center;
+	margin-top: 1.5em;
+}
+
+.old-price {
+	margin-left: 1em;
+}
+
+.add-to-chart {
+	background-color: hsl(158, 36%, 37%);
+	width: 100%;
+	min-height: 3em;
+	margin-top: 1em;
+	border: none;
+	border-radius: 10px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* Desktop version */
+
+@media (min-width: 560px) {
+	.card {
+		max-width: 40em;
+		max-height: 60vh;
+
+		flex-direction: row;
+		align-items: stretch;
+	}
+
+	.product-img {
+		max-height: 100%;
+		width: 50%;
+		border-radius: 10px 0 0 10px;
+	}
+    .add-to-chart{
+        margin-top: 2em;
+    }
+}
