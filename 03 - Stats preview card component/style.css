@@ -79,6 +79,7 @@ body {
 @media (min-width: 1146px) {
     .card{
         height: 45vh;
+		min-height: 450px;
         max-height: 500px;
         display: flex;
         width: 50%;
